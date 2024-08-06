@@ -1,9 +1,5 @@
-# Face Mask Detection
-
-Face mask detection is an object detection task that detects whether people are wearing masks or not in videos. This repository includes a demo for building a face mask detector using the YOLOv5 model.
-
 ### Dataset
-The model was trained on the [Face-Mask](https://www.kaggle.com/andrewmvd/face-mask-detection) dataset, which contains 853 images belonging to 3 classes, as well as their bounding boxes in the PASCAL VOC format. The classes are defined as follows:
+The model was trained on (https://www.kaggle.com/andrewmvd/face-mask-detection) dataset, which contains 853 images belonging to 3 classes, as well as their bounding boxes in the PASCAL VOC format. The classes are defined as follows:
 * `If face is detected but covered`
 * `Face detected`
 * `Face detected but not fully clear`
