@@ -1,5 +1,5 @@
 import torch
-#mport time
+#import time
 import os
 import sys
 from torchvision.models import resnet50
@@ -268,7 +268,7 @@ def run(
                         
                         c = int(cls)  # integer class
                         # Update this line to change the label displayed in the webcam feed
-                        display_label = "Face is covered" if names[c] == "with_mask" else f"{names[c]} {conf:.2f}"
+                        display_label = f"Face is covered {conf:.2f}" if names[c] == "with_mask" else f""
                         annotator.box_label(xyxy, display_label, color=colors(c, True))
                 
                 im0 = annotator.result()
@@ -346,7 +346,3 @@ if __name__ == "__main__":
         run(**vars(opt))
     except StopIteration:
         print("Iteration has stopped, possibly due to the end of the data source.")
-
-    #opt = parser.parse_args()
-    #print_args(FILE.stem, opt)
-    #run(**vars(opt))
